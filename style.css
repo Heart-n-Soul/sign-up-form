@@ -1,0 +1,11 @@
+:root{
+    --btn-bg-color: #596D48;
+    --input-bd-col: #E5E7EB;
+}
+
+@font-face {
+    font-family: 'norse-bold', serif;
+    src: url(./Norse-Bold.otf);
+    font-weight: 900;
+}
+
