@@ -16,43 +16,58 @@
     </figure>
     <main class="main">
       <div class="main--para-container">
-        <p class="main--p1">
+        <p class="main--p1 p__bold">
           This is not a real online service! You know you need something like
           this in your life to help you realize your deepest dreams. Sign up
           <em>now</em> to get started.
         </p>
-        <p class="main--p2">You <em>know</em> you want to.</p>
+        <br />
+        <p class="main--p2 p__bold">You <em>know</em> you want to.</p>
       </div>
       <form action="#" class="form">
         <div class="form--container">
-          <h2 class="form--title">Let's do this!</h2>
+          <p class="form--title">Let's do this!</p>
           <div class="form--div-container">
             <div class="form--div1">
-              <label for="first-name">first name</label>
-              <input type="text" id="first-name" name="fname" />
-              <label for="email">email</label>
-              <input type="email" id="email" name="email" />
-              <label for="password">password</label>
-              <input
-                type="password"
-                id="password"
-                name="password"
-                class="error"
-              />
-              <span class="password-mismatch--message"></span>
+              <div class="name input__bottom-mar form-control">
+                <label for="first-name">first name</label>
+                <input type="text" id="first-name" name="fname" />
+              </div>
+              <div class="email input__bottom-mar form-control">
+                <label for="email">email</label>
+                <input type="email" id="email" name="email" />
+              </div>
+              <div class="password form-control">
+                <label for="password">password</label>
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  class="error"
+                />
+                <span class="password-mismatch__msg"
+                  >kjbkg passwoed mismath</span
+                >
+              </div>
             </div>
             <div class="form--div2">
-              <label for="last-name">last name</label>
-              <input type="text" id="last-name" name="lname" />
-              <label for="phone-number">phone number</label>
-              <input type="tel" id="phone-number" name="phone-number" />
-              <label for="confirm-pswd">confirm password</label>
-              <input
-                type="password"
-                id="confirm-pswd"
-                name="confirm-password"
-                class="error"
-              />
+              <div class="name input__bottom-mar form-control">
+                <label for="last-name">last name</label>
+                <input type="text" id="last-name" name="lname" />
+              </div>
+              <div class="number input__bottom-mar form-control">
+                <label for="phone-number">phone number</label>
+                <input type="tel" id="phone-number" name="phone-number" />
+              </div>
+              <div class="confirm-pswd form-control">
+                <label for="confirm-pswd">confirm password</label>
+                <input
+                  type="password"
+                  id="confirm-pswd"
+                  name="confirm-password"
+                  class="error"
+                />
+              </div>
             </div>
           </div>
         </div>
