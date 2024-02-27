@@ -3,6 +3,7 @@
   --input-bd-col: #e5e7eb;
   --white: #fff;
   --main-bg-col: #f5f5f5;
+  --btn-hov-col: #82aa60;
 }
 
 @font-face {
@@ -12,6 +13,173 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* margin: 0; */
+}
+
+/* .main--para-container {
+  margin: 0;
+} */
+
+.image {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./images/halie-west-25xggax4bSA-unsplash.jpg);
+
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  /* object-fit: cover; */
+}
+
+.image--title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* position: relative;
+  top: 3rem; */
+  background-color: rgba(0, 0, 0, 0.45);
+  width: 100%;
+  height: 20%;
+}
+
+img[alt="odin-lined"] {
+  width: 3rem;
+  height: 50px;
+}
+
+.image--title {
+  color: var(--white);
+  /* width: 5rem; */
+  font-family: "norse-bold";
+  font-size: 3rem;
+}
+
+.main {
+  background-color: var(--main-bg-col);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main--para-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.p__bold {
+  font-weight: 900;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--white);
+  padding: 20px 0;
+  box-shadow: 1px 2px 5px 2px rgba(0, 0, 0, 0.1);
+}
+
+.form--title {
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+
+.form--div-container {
+  display: flex;
+  gap: 55px;
+}
+
+label {
+  text-transform: uppercase;
+  font-size: 0.62rem;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.input__bottom-mar {
+  margin-bottom: 20px;
+}
+
+input {
+  border: 1.5px solid var(--input-bd-col);
+  padding: 2px 7px;
+  box-shadow: none;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+}
+
+.password-mismatch__msg {
+  display: none;
+  font-size: 0.65rem;
+  color: #ff0000;
+}
+
+.submit--wrapper {
+  margin: auto;
+  margin-top: 20px;
+}
+
+.submit {
+  text-transform: capitalize;
+  font-size: 0.8rem;
+  color: var(--white);
+  font-weight: 900;
+  padding: 7px 35px;
+  background-color: var(--btn-bg-color);
+  border: none;
+  border-radius: 4px;
+}
+
+.log-in-text {
+  margin-top: 22px;
+  margin-bottom: 20px;
+  font-size: 0.8rem;
+}
+
+.log-in {
+  color: var(--btn-bg-color);
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.submit:hover {
+  background-color: var(--btn-hov-col);
+}
+
+.log-in:hover {
+  color: var(--btn-hov-col);
+}
+
+input:focus {
+  border-color: #0000ff;
+  border-radius: 3px;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+  outline: none;
+}
+
+/* body {
   display: flex;
 }
 
@@ -43,7 +211,6 @@ img[alt="odin-lined"] {
 
 .image--title {
   color: var(--white);
-  /* width: 5rem; */
   font-family: "norse-bold";
   font-size: 3.8rem;
 }
@@ -51,9 +218,7 @@ img[alt="odin-lined"] {
 .main {
   width: 65%;
   background-color: var(--main-bg-col);
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center; */
+ 
 }
 
 .main--para-container {
@@ -99,13 +264,61 @@ label {
 
 input {
   border: 1.5px solid var(--input-bd-col);
+  padding: 0 7px;
+  box-shadow: none;
 }
+
 .form-control {
   display: flex;
   flex-direction: column;
 }
 
 .password-mismatch__msg {
+  display: none;
   font-size: 0.65rem;
   color: #ff0000;
 }
+
+.submit--wrapper {
+  margin-top: 25px;
+  margin-left: 35px;
+}
+
+.submit {
+  text-transform: capitalize;
+  font-size: 0.8rem;
+  color: var(--white);
+  font-weight: 900;
+  padding: 7px 35px;
+  background-color: var(--btn-bg-color);
+  border: none;
+  border-radius: 4px;
+}
+
+.log-in-text {
+  margin-top: 22px;
+  font-size: 0.8rem;
+}
+
+.log-in {
+  color: var(--btn-bg-color);
+  font-weight: 900;
+  text-decoration: none;
+}
+
+input:focus {
+  border-color: #0000ff;
+  border-radius: 3px;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+  outline: none;
+} */
+
+/* @media only screen and (max-width: 700px) {
+  body {
+    flex-direction: column;
+  }
+
+  .form--div-container {
+    display: block;
+  }
+} */
