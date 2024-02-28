@@ -179,6 +179,55 @@ input:focus {
   outline: none;
 }
 
+@media only screen and (max-width: 700px) {
+  body {
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .image {
+    width: 35%;
+    height: 100vh;
+    align-items: flex-start;
+  }
+
+  .image--title-container {
+    position: relative;
+    top: 9.5rem;
+    height: 15%;
+  }
+
+  img[alt="odin-lined"] {
+    width: 20%;
+    height: 80%;
+  }
+
+  .image--title {
+    font-size: 3.8rem;
+  }
+
+  .main {
+    width: 65%;
+    display: block;
+  }
+
+  .main--para-container {
+    display: block;
+    margin-top: 100px;
+    margin-left: 35px;
+    margin-right: 0;
+  }
+
+  .main--p1 {
+    max-width: 490px;
+  }
+
+  .form--container {
+    display: block;
+    padding: 20px 35px;
+  }
+}
+
 /* body {
   display: flex;
 }
