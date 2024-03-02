@@ -1,56 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign-in Form</title>
-    <link rel="stylesheet" href="./reset.css">
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    <main>
-        <figure>
-            <div>
-                <img src="./images/odin-lined.png" alt="odin-lined">
-                <h1>odin</h1>
-            </div>
-        </figure>
-        <section>
-            <div>
-                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
-                <p>You <em>know</em> you want to.</p>
-            </div>
-            <form action="#">
-                <div>
-                    <legend>Let's do this!</legend>
-                    <div>
-                        <div>
-                            <label for="first-name">first name</label>
-                            <input type="text" id="first-name" name="fname">
-                            <label for="email">email</label>
-                            <input type="email" id="email" name="email">
-                            <label for="password">password</label>
-                            <input type="password" id="password" name="password" class="error"> 
-                            <span class="password-mismatch--message"></span>
-                        </div>
-                        <div>
-                            <label for="last-name">last name</label>
-                            <input type="text" id="last-name" name="lname">
-                            <label for="phone-number">phone number</label>
-                            <input type="tel" id="phone-number" name="phone-number">
-                            <label for="confirm-pswd">confirm password</label>
-                            <input type="password" id="confirm-pswd" name="confirm-password" class="error">
-                        </div>
-                    </div>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <figure class="image">
+      <div class="image--title-container">
+        <img src="./images/odin-lined.png" alt="odin-lined" />
+        <h1 class="image--title">odin</h1>
+      </div>
+    </figure>
+    <main class="main">
+      <div class="main--para-container">
+        <p class="main--p1 p__bold">
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams. Sign up
+          <em>now</em> to get started.
+        </p>
+        <br />
+        <p class="main--p2 p__bold">You <em>know</em> you want to.</p>
+      </div>
+      <form action="#" class="form">
+        <div class="form--container">
+          <p class="form--title">Let's do this!</p>
+          <div class="form--div-container">
+            <div class="form--div1">
+              <div class="name">
+                <div class="input__bottom-mar form-control">
+                  <label for="first-name">first name</label>
+                  <input type="text" id="first-name" name="fname" />
                 </div>
-                <div>
-                    <button type="submit">create account</button>
-                    <p>already have an account? <span><a href="#">log in</a></span></p>
+                <div class="input__bottom-mar form-control">
+                  <label for="last-name">last name</label>
+                  <input type="text" id="last-name" name="lname" />
                 </div>
-                
-            </form>
-        </section>
+              </div>
+
+              <div class="contact">
+                <div class="email input__bottom-mar form-control">
+                  <label for="email">email</label>
+                  <input type="email" id="email" name="email" />
+                </div>
+                <div class="number input__bottom-mar form-control">
+                  <label for="phone-number">phone number</label>
+                  <input type="tel" id="phone-number" name="phone-number" />
+                </div>
+              </div>
+
+              <div class="password">
+                <div class="password1 input__bottom-mar form-control">
+                  <label for="password">password</label>
+                  <input type="password" id="password" name="password" />
+                  <span class="error-msg">* Passwords do not match</span>
+                </div>
+                <div class="confirm-pswd input__bottom-mar form-control">
+                  <label for="confirm-pswd">confirm password</label>
+                  <input
+                    type="password"
+                    id="confirm-pswd"
+                    name="confirm-password"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="submit--wrapper">
+          <button class="submit" type="submit">create account</button>
+          <p class="log-in-text">
+            Already have an account?
+            <span><a href="#" class="log-in">Log in</a></span>
+          </p>
+        </div>
+      </form>
     </main>
-    
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
