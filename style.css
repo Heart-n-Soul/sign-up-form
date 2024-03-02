@@ -131,7 +131,7 @@ input {
   flex-direction: column;
 }
 
-.password-mismatch__msg {
+.error-msg {
   display: none;
   font-size: 0.65rem;
   color: #ff0000;
